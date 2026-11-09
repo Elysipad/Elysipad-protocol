@@ -1,0 +1,27 @@
+ELYSIPAD gates
+
+PASS  current :: page loads without script errors
+PASS  current :: status pill reads Streaming once the register-driven source answers
+PASS  current :: board has ten rows: pinned row 1 plus nine trending rows
+PASS  current :: rows 2-10: top by 24h volume, non-Solana excluded, own token de-duplicated
+PASS  current :: letter tiles: 3 rendered, threshold >= 2, matches missing and failed images
+PASS  current :: every trending row has a copy-address button
+PASS  current :: row 1: placeholder with the real brand logo, never a letter tile
+PASS  current :: row 1: price $0.00, dotted data, not clickable
+PASS  current :: no own-token request is made while the CA is not stated
+PASS  current :: own row style: 2px mint border-left, 2s ease-in-out infinite ownPulse
+PASS  current :: CA slot stays visible at the top while scrolling
+PASS  current :: CA slot is inert: label and "pending" only, nothing to click
+PASS  current :: rendered page text carries no dates or clock strings
+PASS  current :: tabs re-sort trending rows by 24h change
+PASS  current :: filter narrows the rows while row 1 stays pinned
+PASS  current :: trending copy button copies that token address
+PASS  current :: source failure: dash cells, visible error, error ticker
+PASS  current :: prefers-reduced-motion: no animation, no transition, reveals instant, no parallax
+PASS  current :: 360px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 390px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 430px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 1366px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 1440px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+
+gates: 23 passed, 0 failed, 23 total (199.5s)

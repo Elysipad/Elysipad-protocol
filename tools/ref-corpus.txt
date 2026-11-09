@@ -1,0 +1,109 @@
+Elysion | Where tokens begin. Launch on Elysium and pump.fun
+ELYSION
+Sound on
+Skip
+Where tokens begin
+Where tokens begin.
+Launch
+A multichain token launchpad inspired by the ancient Greek origins of Elysium
+A token launchpad inspired by the ancient Greek origins of Elysium. Launch in one transaction, pay once in SOL.
+Launch a Token
+Add funds with SOL
+Multichain Deployment
+Launch Protection
+Unified Payments
+Deployment Monitoring
+Onchain Records
+Hermes Rhadamanthys Charon Zephyr Mnemosyne
+coins launched
+trades
+volume
+Launches
+Live New Top Volume
+Search name, ticker or address
+Couldn't load coins:
+No coins match that search.
+No coins here yet.
+Be the first to launch
+Copy contract address
+pump.fun
+Open on Elysion
+Open on pump.fun
+Official
+Portfolio
+Docs
+Sign in with Solana
+Back to coins
+Launch on Elysium and pump.fun at once. Pay once in SOL.
+Name, ticker and image are set forever.
+Upload an image
+What is it and why should anyone care?
+Same name, ticker and image on every chain you pick, at the same moment.
+Creator rewards can go to you, or to the coin's holders.
+Market cap
+Volume 24h
+Holder rewards
+Your rewards
+Nothing to claim yet
+Introduction
+Elysium native launch
+Creator rewards
+Custom fee automation
+Opening protection
+Infrastructure
+Security & permissions
+Roadmap
+Risks & disclosures
+In ancient Greek mythology, Elysion was a legendary paradise reserved for heroes, a realm of peace and eternal happiness.
+Inspired by it, Elysion is a multichain token launchpad that makes token creation simpler across blockchain ecosystems.
+One creation. One payment. Multiple chains.
+Every launch is verifiable onchain: token name and ticker, network, contract address, transaction hashes and timestamps.
+These reduce, but cannot eliminate, sniping and coordinated buying.
+The contracts are not yet audited.
+Every legend has an origin. Every token needs a beginning.
+Launch interface
+Private mainnet launches
+Public mainnet transition
+Native deployment
+Direct liquidity pools
+Locked liquidity
+Paid to holders so far
+Charting by TradingView
+Elysium holder rewards switch on with the next launchpad upgrade
+Pay in SOL from your Solana wallet: one signature swaps it to HYPE through Relay and it moves into your trading wallet.
+Coins you buy and HYPE from sells stay in this trading wallet.
+Confirm in Phantom
+Sign in with your Solana wallet to see your coins, holdings and creator fees.
+Not enough SOL for this amount plus fees.
+Quote expired before you signed. Try again.
+Nothing was spent; try again.
+Uploading image
+Launching your coin
+Your coin is already live
+Bridge fee
+Pool fee
+You pay
+You sell
+Enter an amount
+Fees sent to your wallet
+Claim fees
+No open positions.
+Indexing this coin. Trades appear within a minute.
+All-time high
+Launch market cap
+Pool id
+Other ways to fund
+Add with SOL
+Hermes, messenger of the gods, travelled between realms.
+Charon, the ferryman, carries a single payment across chains.
+Zephyr tracks each launch through its stages: preparing, submitted, pending confirmation, confirmed or failed.
+Every launch is verifiable onchain.
+A saved per-launch history with retry is planned.
+The Elysion infrastructure
+Protocol security & permissions
+Deployment tracking
+Unified payments
+Creator reward selection
+Status on this site today
+Platform fee: buyback, team, development
+Also on pump.fun

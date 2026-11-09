@@ -1,0 +1,19 @@
+{
+  "name": "elysipad",
+  "version": "1.0.0",
+  "description": "ELYSIPAD - an open, plain-spoken launch pad on Solana.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs",
+    "measure": "node scripts/gates.mjs --measure-only"
+  },
+  "devDependencies": {
+    "jpeg-js": "^0.4.4",
+    "playwright-core": "^1.49.0",
+    "pngjs": "^7.0.0"
+  }
+}

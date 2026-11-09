@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "records": {
+    "chain": {
+      "label": "Runs on",
+      "state": "stated",
+      "kind": "text",
+      "value": "Solana",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "rpc": {
+      "label": "Solana RPC",
+      "state": "stated",
+      "kind": "endpoint",
+      "url": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "market-source": {
+      "label": "Market source",
+      "state": "stated",
+      "kind": "endpoint",
+      "url": "https://api.dexscreener.com/token-boosts/top/v1",
+      "pairsUrl": "https://api.dexscreener.com/tokens/v1/solana/{addresses}",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "own-source": {
+      "label": "Own token source",
+      "state": "stated",
+      "kind": "endpoint",
+      "url": "https://api.dexscreener.com/latest/dex/tokens/{ca}",
+      "metaUrl": "https://frontend-api.pump.fun/coins/{ca}",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "ca": {
+      "label": "CA",
+      "state": "absent",
+      "kind": "address",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "x": {
+      "label": "X",
+      "state": "absent",
+      "kind": "social",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "github": {
+      "label": "GitHub",
+      "state": "absent",
+      "kind": "social",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "stat-projects": {
+      "label": "Projects onboarded",
+      "state": "absent",
+      "kind": "stat",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "stat-swaps": {
+      "label": "Orders routed",
+      "state": "absent",
+      "kind": "stat",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    },
+    "stat-value": {
+      "label": "Value moved",
+      "state": "absent",
+      "kind": "stat",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-09"
+    }
+  }
+}

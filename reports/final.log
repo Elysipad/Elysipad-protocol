@@ -1,0 +1,136 @@
+
+> elysipad@1.0.0 gates
+> node scripts/gates.mjs
+
+ELYSIPAD gates
+
+PASS  palette: every token equals the real pixel at its stated coordinate
+PASS  palette: every colour token carries a sample line or is an alias
+PASS  logo assets: IHDR, alpha histogram and black-under-alpha were read before resizing
+PASS  source :: own row: parallel fetch with Promise.all
+PASS  source :: own row: pair selection baseToken.address === CA, sorted by volume.h24 desc, [0]
+PASS  source :: own row: console labels present
+PASS  source :: own row: pump.fun image_uri first, local logo-192 fallback
+PASS  source :: own row: liquidity falls back to marketCap with Mkt Cap title
+PASS  source :: own row: CA source endpoints live in the register
+PASS  source :: own row css: 2px mint left border, 2s ease-in-out infinite pulse
+PASS  source :: own row css: reduced motion switches animation off
+PASS  source :: reduced motion: global rule zeroes animation and transition
+PASS  source :: reduced motion: JS checks the media query
+PASS  source :: placeholder row uses the brand logo, not a tile
+PASS  source :: letter tile fallback exists for missing and failed images
+PASS  source :: market reads only the market-source record (no CA import)
+PASS  source :: market: hidden tab pauses the poller, visible fetches at once
+PASS  source :: market: 60s poll and exponential backoff
+PASS  source :: no DexScreener CDN logo host anywhere
+PASS  source :: tap target tokens: 44px minimum on controls
+PASS  hygiene :: no agent config file or folder in the repo
+PASS  hygiene :: no AI attribution or mention in any project text file
+PASS  hygiene :: README.md, LICENSE and docs/whitepaper.md exist in the project root
+PASS  hygiene :: LICENSE is MIT, copyright ELYSIPAD, 2026
+PASS  unit :: market: Solana entries only, de-duplicated
+PASS  unit :: market: top 10 by 24h volume, best pair per token
+PASS  unit :: own row: picks the highest-volume pair whose baseToken is the CA
+PASS  unit :: own row: liquidity.usd 0 falls back to marketCap (title Mkt Cap); positive liquidity wins
+PASS  unit :: own row: liquidity candidates are logged
+PASS  unit :: own row: image_uri wins, local logo is the fallback
+PASS  unit :: market: failure after exponential backoff gives status error
+PASS  unit :: market: a failed refresh keeps the last good rows (status stale)
+PASS  unit :: format: dash for missing numbers
+PASS  unit :: poller: first fetch at start, then every 60s, silent while hidden, immediate when visible
+PASS  current :: register is valid; inert records carry no value or url
+PASS  current :: inert records leak nothing (no value, no url, no href)
+PASS  current :: social icons: official marks, icon only, link iff stated
+PASS  current :: CA slot: top of page, live iff stated
+PASS  current :: palette: no colour literal outside the tokens file
+PASS  current :: no ch units
+PASS  current :: no dates, timestamps or clock strings anywhere in the shipped page
+PASS  current :: address scanner: every address-shaped string is a stated registry value
+PASS  current :: favicon: 32x32 SVG traced from the logo pixel grid, no double hyphens
+PASS  current :: dist holds only deployable files
+PASS  copy: zero shared 2-grams with the reference
+PASS  copy: no content word shared with the reference except the allowed domain terms
+        (domain terms shared by necessity: pending, solana, volume, liquidity, address, cap)
+PASS  flipped :: register is valid; inert records carry no value or url
+PASS  flipped :: inert records leak nothing (no value, no url, no href)
+PASS  flipped :: social icons: official marks, icon only, link iff stated
+PASS  flipped :: CA slot: top of page, live iff stated
+PASS  flipped :: palette: no colour literal outside the tokens file
+PASS  flipped :: no ch units
+PASS  flipped :: no dates, timestamps or clock strings anywhere in the shipped page
+PASS  flipped :: address scanner: every address-shaped string is a stated registry value
+PASS  flipped :: favicon: 32x32 SVG traced from the logo pixel grid, no double hyphens
+PASS  flipped :: dist holds only deployable files
+PASS  mutation: a stray base58 address is caught by the address scanner
+PASS  mutation: a stray 0x address is caught by the address scanner
+PASS  mutation: the same 0x address passes once it is a stated registry record
+PASS  mutation: a stray colour literal is caught by the palette gate
+PASS  mutation: a visible date is caught by the date gate
+PASS  mutation: a clock string is caught by the date gate
+PASS  mutation: a ch unit is caught
+PASS  mutation: a double hyphen in the favicon is caught
+PASS  mutation: an icon whose markup disagrees with its record state is caught
+PASS  mutation: an inert record carrying a url is caught
+PASS  current :: page loads without script errors
+PASS  current :: status pill reads Streaming once the register-driven source answers
+PASS  current :: board has ten rows: pinned row 1 plus nine trending rows
+PASS  current :: rows 2-10: top by 24h volume, non-Solana excluded, own token de-duplicated
+PASS  current :: letter tiles: 3 rendered, threshold >= 2, matches missing and failed images
+PASS  current :: every trending row has a copy-address button
+PASS  current :: row 1: placeholder with the real brand logo, never a letter tile
+PASS  current :: row 1: price $0.00, dotted data, not clickable
+PASS  current :: no own-token request is made while the CA is not stated
+PASS  current :: own row style: 2px mint border-left, 2s ease-in-out infinite ownPulse
+PASS  current :: CA slot stays visible at the top while scrolling
+PASS  current :: CA slot is inert: label and "pending" only, nothing to click
+PASS  current :: rendered page text carries no dates or clock strings
+PASS  current :: tabs re-sort trending rows by 24h change
+PASS  current :: filter narrows the rows while row 1 stays pinned
+PASS  current :: trending copy button copies that token address
+PASS  current :: source failure: dash cells, visible error, error ticker
+PASS  current :: prefers-reduced-motion: no animation, no transition, reveals instant, no parallax
+PASS  current :: 360px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 390px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 430px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 1366px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  current :: 1440px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  flipped :: page loads without script errors
+PASS  flipped :: status pill reads Streaming once the register-driven source answers
+PASS  flipped :: board has ten rows: pinned row 1 plus nine trending rows
+PASS  flipped :: rows 2-10: top by 24h volume, non-Solana excluded, own token de-duplicated
+PASS  flipped :: letter tiles: 3 rendered, threshold >= 2, matches missing and failed images
+PASS  flipped :: every trending row has a copy-address button
+PASS  flipped :: own row: live, not the placeholder, logo is the pump.fun image_uri
+PASS  flipped :: own row: price, 24h, volume from the highest-volume matching pair
+PASS  flipped :: own row: liquidity falls back to market cap with a Mkt Cap title
+PASS  flipped :: own row: console reports raw response and liquidity candidates
+PASS  flipped :: own row: both sources fetched in the same cycle
+PASS  flipped :: own row: de-duplicated from trending, market ticker unaffected
+PASS  flipped :: ticker still shows all ten market entries including the own token
+PASS  flipped :: own row copy button copies the CA
+PASS  flipped :: own row style: 2px mint border-left, 2s ease-in-out infinite ownPulse
+PASS  flipped :: CA slot stays visible at the top while scrolling
+PASS  flipped :: CA slot shows the full address
+PASS  flipped :: CA click-to-copy copies and gives visible plus announced feedback
+PASS  flipped :: CA copy feedback resets
+PASS  flipped :: rendered page text carries no dates or clock strings
+PASS  flipped :: tabs re-sort trending rows by 24h change
+PASS  flipped :: filter narrows the rows while row 1 stays pinned
+PASS  flipped :: trending copy button copies that token address
+PASS  flipped :: own row: pump.fun failure falls back to assets/logo-192.png
+PASS  flipped :: source failure: dash cells, visible error, error ticker
+PASS  flipped :: prefers-reduced-motion: no animation, no transition, reveals instant, no parallax
+PASS  flipped :: 360px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  flipped :: 360px: full CA address fits inside the viewport
+PASS  flipped :: 390px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  flipped :: 390px: full CA address fits inside the viewport
+PASS  flipped :: 430px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  flipped :: 430px: full CA address fits inside the viewport
+PASS  flipped :: 1366px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  flipped :: 1366px: full CA address fits inside the viewport
+PASS  flipped :: 1440px: no sideways scroll, both icons top-right at 44x44, CA in view, all tap targets >= 44
+PASS  flipped :: 1440px: full CA address fits inside the viewport
+PASS  market follows the market-source record only: ticker identical whatever the CA state
+
+gates: 126 passed, 0 failed, 126 total (306.5s)
+GATES_EXIT=0

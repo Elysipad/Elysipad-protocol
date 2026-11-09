@@ -1,0 +1,45 @@
+/*
+  ELYSIPAD design tokens. This is the ONLY file in the project allowed to hold colour literals.
+  Provenance: every value is a real pixel read from a shipped asset (k-means, k=6, on a 1-in-4
+  pixel grid, then each centroid snapped to the nearest actual pixel coordinate in the full image).
+  Each @sample line is machine-checked by the gates against the source pixel: file, x, y.
+
+  Logo asset: brand/LOGO ELYSIPAD PNG.png  (IHDR 2000x2000, colour type 2 RGB, no alpha).
+    cluster 84.0%  navy field      centre 0,21,42
+    cluster 11.8%  navy panel      centre 1,35,60
+    cluster  1.9%  gold            centre 241,186,93
+    cluster  1.6%  gold highlight  centre 250,208,121
+    cluster  0.6%  gold deep       centre 217,158,66
+  Reference banner: reference/ELYSIPAD 1.jpg.jpeg (1600x900, JPEG, no alpha). JPEG pixels are read
+  with jpeg-js (the decoder the gates use), so the hex is the decoder-exact value at that coordinate.
+    cluster 30.6% sky deep, 24.1% sky, 19.7% sky pale, 16.0% mist
+  The transparent logo (brand/LOGO ELYSIPAD PNG...png, colour type 6) stores pure black under
+  alpha 0 for 100% of its transparent pixels, so every resize of it is premultiplied.
+*/
+:root {
+  /* @sample brand/LOGO ELYSIPAD PNG.png 0 0 */
+  --color-ink: #00152a;
+  /* @sample brand/LOGO ELYSIPAD PNG.png 996 604 */
+  --color-panel: #01233c;
+  /* @sample brand/LOGO ELYSIPAD PNG.png 1044 976 */
+  --color-gold: #f1ba5d;
+  /* @sample brand/LOGO ELYSIPAD PNG.png 1032 598 */
+  --color-gold-hi: #fad079;
+  /* @sample brand/LOGO ELYSIPAD PNG.png 814 1342 */
+  --color-gold-deep: #da9d43;
+  /* @sample reference/ELYSIPAD 1.jpg.jpeg 474 124 */
+  --color-sky-deep: #0673db;
+  /* @sample reference/ELYSIPAD 1.jpg.jpeg 958 372 */
+  --color-sky: #42a7f3;
+  /* @sample reference/ELYSIPAD 1.jpg.jpeg 350 438 */
+  --color-sky-pale: #89c5f5;
+  /* @sample reference/ELYSIPAD 1.jpg.jpeg 382 786 */
+  --color-mist: #deeaf4;
+
+  /* Aliases. The name --color-mint is kept for the own-token row contract; no mint pixel exists
+     in any asset, so it resolves to the sampled pale sky. */
+  --color-mint: var(--color-sky-pale);
+  --color-up: var(--color-sky-pale);
+  --color-down: var(--color-gold-deep);
+  --color-gold-grad: linear-gradient(180deg, var(--color-gold-hi) 0%, var(--color-gold) 55%, var(--color-gold-deep) 100%);
+}

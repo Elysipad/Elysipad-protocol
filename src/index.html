@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ELYSIPAD | Each project earns its sunrise</title>
+<meta name="description" content="ELYSIPAD is a Solana hub shaped by plain numbers, short rules and a calm screen. Busy pairs stream in below.">
+<meta property="og:title" content="ELYSIPAD">
+<meta property="og:description" content="Plain numbers, short rules and a calm screen for Solana projects.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://elysipad.fun/brand/elysipad-logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="header" id="top">
+  <div class="header-row">
+    <a class="logo" href="#top" aria-label="ELYSIPAD home">
+      <img src="/assets/logo-192.png" alt="" width="30" height="30">
+      <span>ELYSIPAD</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#board">Board</a>
+      <a href="#pillars">Pillars</a>
+      <a href="#path">Path</a>
+      <a href="#links">Links</a>
+    </nav>
+    <div class="right">
+      <span class="pill busy" id="status-pill" role="status"><i class="dot" aria-hidden="true"></i><span id="status-text">Syncing</span></span>
+      <div class="social" aria-label="Social channels">
+<!--@SOCIAL-->
+      </div>
+    </div>
+  </div>
+  <div class="ca-strip">
+<!--@CA_SLOT-->
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="layer mesh a" data-depth="0.02"></div>
+    <div class="layer mesh b" data-depth="0.035"></div>
+    <svg class="layer rings" data-depth="0.06" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice"><circle cx="400" cy="400" r="150"/><circle cx="400" cy="400" r="250"/><circle cx="400" cy="400" r="360"/><circle cx="400" cy="400" r="480"/></svg>
+    <div class="layer motes" id="motes" data-depth="0.1"></div>
+  </div>
+  <div class="hero-inner">
+    <h1 class="wordmark grad-text layer" data-depth="-0.015">ELYSIPAD</h1>
+    <p class="tagline"><span>Each project earns its sunrise.</span></p>
+    <p class="hero-sub">A Solana hub shaped by plain numbers, short rules and a calm screen.</p>
+    <div class="hero-actions">
+      <a class="btn gold big" href="#board">Browse the board</a>
+      <a class="btn outline-gold big" href="#path">Follow the path</a>
+    </div>
+  </div>
+  <div class="pillars" id="pillars" data-reveal-group>
+    <div class="pillar spot" data-reveal>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="6"/><path d="M20 5v5M20 30v5M5 20h5M30 20h5M9.4 9.4l3.5 3.5M27.1 27.1l3.5 3.5M9.4 30.6l3.5-3.5M27.1 12.9l3.5-3.5"/></svg>
+      <b>CLARITY</b><span>Rules in plain sight</span>
+    </div>
+    <div class="pillar spot" data-reveal>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l12 4v10c0 8-5 14-12 18C13 32 8 26 8 18V8z"/><path d="M14 19l4 4 8-8"/></svg>
+      <b>GUARD</b><span>Checks that run ahead of release</span>
+    </div>
+    <div class="pillar spot" data-reveal>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 22c5-9 9 9 14 0s9 9 14 0 4-4 4-4"/><path d="M4 31h32"/></svg>
+      <b>FLOW</b><span>One clean route from idea to listing</span>
+    </div>
+    <div class="pillar spot" data-reveal>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 32V24M16 32V14M24 32V8M32 32V19"/></svg>
+      <b>SIGNAL</b><span>Numbers pulled fresh</span>
+    </div>
+    <div class="pillar spot" data-reveal>
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6l12 6-12 6-12-6z"/><path d="M8 19l12 6 12-6M8 26l12 6 12-6"/></svg>
+      <b>RECORD</b><span>Facts kept in one register</span>
+    </div>
+  </div>
+</section>
+
+<section class="ticker" aria-label="Streaming price strip">
+  <div class="ticker-track" id="ticker-track">
+    <span class="tick skel-line"></span><span class="tick skel-line"></span><span class="tick skel-line"></span><span class="tick skel-line"></span>
+  </div>
+</section>
+
+<div class="stats" data-reveal-group>
+<!--@STATS-->
+</div>
+
+<section class="page" id="board">
+  <div class="toolbar" data-reveal>
+    <div>
+      <h2>Pair board</h2>
+      <p class="muted small board-sub">Ten rows from one feed: the busiest Solana pairs, ranked by daily turnover.</p>
+    </div>
+    <div class="row gap wrap">
+      <div class="tabs" role="tablist" aria-label="Sort rows">
+        <button type="button" role="tab" class="on" data-sort="volume" aria-selected="true">Turnover</button>
+        <button type="button" role="tab" data-sort="change" aria-selected="false">Momentum</button>
+        <button type="button" role="tab" data-sort="liquidity" aria-selected="false">Depth</button>
+      </div>
+      <input class="search" id="filter" type="search" placeholder="Find an asset by symbol or mint" aria-label="Filter rows" autocomplete="off" spellcheck="false">
+    </div>
+  </div>
+  <p class="board-note" id="board-note" role="status" hidden></p>
+  <div class="board card" role="table" aria-label="Pair board">
+    <div class="board-head" role="row">
+      <span role="columnheader">Asset</span>
+      <span role="columnheader" class="num">Price</span>
+      <span role="columnheader" class="num">Day move</span>
+      <span role="columnheader" class="num">Volume</span>
+      <span role="columnheader" class="num">Liquidity</span>
+      <span role="columnheader" class="sr-only">Clip address</span>
+    </div>
+    <div class="board-body" id="board-body" role="rowgroup"></div>
+  </div>
+</section>
+
+<section class="page narrow" id="path">
+  <div class="path-head" data-reveal>
+    <h2>The path ahead</h2>
+    <p class="doc-tag">Four steps, each one shown ahead of its release.</p>
+  </div>
+  <div class="phases" data-reveal-group>
+    <article class="card spot phase" data-reveal>
+      <span class="badge live">in place</span>
+      <h3>1. Foundation</h3>
+      <ul><li>Brand, pages and register established</li><li>Streaming Solana pair board running</li><li>Gates that keep each fact honest</li></ul>
+    </article>
+    <article class="card spot phase" data-reveal>
+      <span class="badge partial">coming</span>
+      <h3>2. Debut</h3>
+      <ul><li>CA announced on this page ahead of anywhere else</li><li>The pinned row turns to streaming data</li><li>Channels light up when proven</li></ul>
+    </article>
+    <article class="card spot phase" data-reveal>
+      <span class="badge planned">queued</span>
+      <h3>3. Tools</h3>
+      <ul><li>Builder flow, one visible step per stage</li><li>Pre-flight checks ahead of a wide release</li><li>Reader-friendly documentation</li></ul>
+    </article>
+    <article class="card spot phase" data-reveal>
+      <span class="badge planned">queued</span>
+      <h3>4. Reach</h3>
+      <ul><li>Partner integrations</li><li>Community programs</li><li>Support for more ledgers</li></ul>
+    </article>
+  </div>
+</section>
+
+<section class="page narrow" id="links">
+  <div class="path-head" data-reveal>
+    <h2>Find us</h2>
+    <p class="doc-tag">Each channel remains dark until proven.</p>
+  </div>
+  <div class="chips" data-reveal-group>
+<!--@CHIPS-->
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <p>ELYSIPAD on Solana</p>
+  <p>Figures shown are informational, not advice.</p>
+</footer>
+
+<script type="application/json" id="register"><!--@REGISTER_JSON--></script>
+<script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
